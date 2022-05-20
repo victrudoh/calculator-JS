@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="top">
+          <div class="topTopRow">
+            <div class="oldOperand" id="oldOperand">0</div>
+            <div class="operator" id="operator">-</div>
+            <div class="newOperand" id="newOperand">0</div>
+          </div>
+          <div class="topBottomRow">
+            <div class="result" id="result">0</div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="row">
+            <span onclick="input(id)" id="cls">C</span>
+            <!-- <button>DEL</button> -->
+            <button onclick="input(id)" id="mod">MOD</button>
+            <button onclick="input(id)" id="/">/</button>
+          </div>
+
+          <div class="row">
+            <button onclick="input(id)" id="7">7</button>
+            <button onclick="input(id)" id="8">8</button>
+            <button onclick="input(id)" id="9">9</button>
+            <button onclick="input(id)" id="*">x</button>
+          </div>
+
+          <div class="row">
+            <button onclick="input(id)" id="4">4</button>
+            <button onclick="input(id)" id="5">5</button>
+            <button onclick="input(id)" id="6">6</button>
+            <button onclick="input(id)" id="-">-</button>
+          </div>
+          <div class="row">
+            <button onclick="input(id)" id="1">1</button>
+            <button onclick="input(id)" id="2">2</button>
+            <button onclick="input(id)" id="3">3</button>
+            <button onclick="input(id)" id="+">+</button>
+          </div>
+
+          <div class="row">
+            <!-- <button>( )</button> -->
+            <button onclick="input(id)" id="0">0</button>
+            <button onclick="input(id)" id=".">.</button>
+            <span class="equals" onclick="input(id)" id="calc">=</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>
